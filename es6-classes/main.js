@@ -11,6 +11,9 @@ class Elf {
 }
 
 const peter = new Elf("Peter", "stones");
+const ogre = { ...peter };
+console.log(peter.__proto__);
+console.log(ogre.__proto__);
 console.log(peter instanceof Elf);
 // console.log(Elf instanceof peter);
 console.log(peter.attack());
